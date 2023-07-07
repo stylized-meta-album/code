@@ -52,6 +52,7 @@ To create a benchmark-ready dataset with dominant styles, follow these steps usi
 ```bash
 python setup_datasets.py SMA_flowers --data_path 'path_to/SMA_flowers' --flatten
 ```
+Note: The flag '--flatten' will generate the images to a flatten structure, required by the benchmark code.
 This will generate:
 - `metadata_SMA_flowers.csv`: the sampled images and their info (category, group i.e. style, etc.) 
 - `stylized_flatten/XXX.jpg` containing images mentioned in `metadata_SMA_flowers.csv`
