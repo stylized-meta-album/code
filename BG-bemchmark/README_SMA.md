@@ -1,4 +1,4 @@
-# Run BG benchmark with dataset 'SMA insects'
+# I. Run BG benchmark with dataset 'SMA insects'
 
 ## Step 1: Get the benchmark-ready 'SMA insects' dataset
 
@@ -33,7 +33,7 @@ The arguments can be tuned to customize the job:
 
 
 
-# Create a new benchmark-ready dataset
+# II. Create a new benchmark-ready dataset
 
 Suppose we have a newly generated SMA dataset, such as SMA_flowers, with the structure 'SMA_flowers/stylized/Category_style/XXX.jpg', and we want to make it 'benchmark-ready':
 
@@ -45,10 +45,10 @@ To create a benchmark-ready dataset with dominant styles, follow these steps usi
 
 2. `train_val_test_split()`: Given the biased dataset generated in Step 1, split it into train (50%), validation (20%), and test (30%) sets as suggested in the original paper.
 
-3. `Datasets.py`: Add an entry for the new SMA dataset.
+3. `Datasets.py` and `setup_datasets.py`: Add entries for the new SMA dataset.
 
 
-4. Launch 
+5. Launch 
 ```bash
 python setup_datasets.py SMA_flowers --data_path 'path_to/SMA_flowers' --flatten
 ```
